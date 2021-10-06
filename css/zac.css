@@ -9,6 +9,7 @@
 
 body {
   height: 100vh;
+  /* overflow-x: hidden; */
 }
 
 a {
@@ -80,22 +81,24 @@ p a:hover {
 }
 
 @media (min-width: 600px) {
-  .nav-menu {
-    margin-bottom: 1em;
-  }
   .description {
     width: 90vw;
     margin: 0 auto;
     display: flex;
-    align-items: last baseline;
+    /* align-items: last baseline; */
   }
   .para-gauche {
     line-height: 1.8;
+  }
+  .desc-gauche {
+    margin-bottom: 2em;
   }
   .desc-droite {
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2em;
+    align-self: last baseline;
   }
 }
 /*################ Section Product ##############*/
@@ -134,13 +137,13 @@ a.ccol-btn span {
   margin-left: 0.3em;
 }
 div.zac-img {
-  margin-top: 2em;
+  margin: 2em 0;
   display: flex;
   justify-content: center;
 }
 .ZAC {
   display: block;
-  width: 320px;
+  width: 300px;
 }
 
 /* p.zac {
@@ -186,6 +189,7 @@ div.zac-img {
     display: block;
     position: absolute;
     bottom: 1em;
+    margin: 0;
   }
 
   .ZAC {
